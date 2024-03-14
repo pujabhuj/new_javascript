@@ -1,0 +1,19 @@
+---------------------- important notes------------------------------------------------------------- 
+---------------------------------------------------------------------------------------------------
+accountId = 2 not allowed constant cant change
+
+prefer nnot to use var because of issue in block scope and functional scope
+
+"use strict";// treat all js code as newer version
+
+//-------Premitive Datatypes -------------------------------//
+number =>2 to power 53
+bigint
+string ==>""
+boolean ==> true/false
+null ==> stanalone empty value  
+undefined ==> 
+symbol ==>to find uniqness
+-------------Object --------------------------------
+console.log(typeof undefined)//undefined
+console.log(typeof null)// object
