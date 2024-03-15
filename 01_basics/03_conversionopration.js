@@ -23,3 +23,47 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber)
 console.log(typeof stringNumber)
+
+//----------------Operaions-------------------------
+
+let value = 3
+let negValue = -value
+console.log(negValue)
+
+// console.log(2+2)
+// console.log(3-2)
+// console.log(3*2)
+// console.log(3**2)
+// console.log(3/2)
+// console.log(3%2)
+
+let str1 ="hello"
+let str2 = "puja"
+let str3 = str1+str2
+console.log(str3)//hellopuja
+
+console.log("1"+2)//12
+console.log(1+"2")//12
+console.log("1"+2+2)//122
+console.log(1+2+"2")//32
+
+console.log(true);//true
+console.log(+true);//1
+console.log(+"");//0
+
+let num1,num2,num3
+num1 = num2 = num3 = 2+2
+console.log(num1);
+
+
+let gamecounter=100
+gamecounter++
+console.log(gamecounter);
+
+let x = 1n;
+
+// BigInt + BigInt -> addition
+x += 2n; // 3n
+
+// BigInt + Number -> throws TypeError
+x += 1; // TypeError: Cannot mix BigInt and other types, use explicit conversions
