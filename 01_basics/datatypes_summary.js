@@ -12,11 +12,11 @@
 
     let useremail = undefined ;let usersemail ;
 
-    const id = symbol("123")// uniq value
+    //const id = symbol("123")// uniq value
 
-    const anotherid = symbol("123")// uniq value
+    //const anotherid = symbol("123")// uniq value
 
-    console.log(id ===anotherid)//false
+    //console.log(id ===anotherid)//false
 
     const bigNumber = 265254445555n
 
@@ -55,3 +55,25 @@
   
 
 //***javasript is dynamically typed language
+
+
+//**************************Memory******************************** */
+
+//Stack Memory(primitive)
+
+let myYoutubename ="puja.com" //primitive type
+
+let anothername = myYoutubename
+console.log(anothername)
+anothername="jhvjhvhjjk"
+    
+// Heap Memory(non-primitive)
+let usr1 ={
+    email:"user1.eami.com",
+    upi:"hgjbhbjj"
+} 
+ 
+let usr2=usr1
+usr2.email="ugjhbj.email.com"
+console.log(usr1)
+console.log(usr2)
