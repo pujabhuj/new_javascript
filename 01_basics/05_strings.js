@@ -1,7 +1,7 @@
 //**************Strings Methode*******************/
 //reference  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr#try_it
  
-
+ 
 const stringName = new String('puja-bhujbal')
 console.log(stringName)
 
@@ -354,3 +354,64 @@ console.log("\u0130".toLocaleLowerCase("en-US") === "i") // false
   
 const locales = ["tr", "TR", "tr-TR", "tr-u-co-search", "tr-x-turkish"];
 console.log("\u0130".toLocaleLowerCase(locales) === "i")// true
+
+// 41. toLocaleUpperCase()       //The toLocaleUpperCase() method of String values returns this string converted to upper case, according to any locale-specific case mappings.
+
+
+console.log("alphabet".toLocaleUpperCase()) // 'ALPHABET'
+
+console.log("Gesäß".toLocaleUpperCase()) // 'GESÄSS'
+
+console.log("i\u0307".toLocaleUpperCase("lt-LT")) // 'I'
+
+const locales1 = ["lt", "LT", "lt-LT", "lt-u-co-phonebk", "lt-x-lietuva"];
+console.log("i\u0307".toLocaleUpperCase(locales1)) // 'I'
+  
+//42 .toLowerCase() // The toLowerCase() method of String values returns this string converted to lower case.
+
+console.log("ALPHABET".toLowerCase()); // 'alphabet'
+
+//43 .toUpperCase()   //The toUpperCase() method of String values returns this string converted to uppercase.
+
+console.log("alphabet".toUpperCase()); // 'ALPHABET'
+
+// 44. toString()  //The toString() method of String values returns this string value
+
+const x = new String("Hello world");
+
+console.log(x.toString()); // "Hello world"
+
+
+// 45 . toWellFormed()  //The toWellFormed() method of String values returns a string where all lone surrogates of this string are replaced with the Unicode replacement character U+FFFD.
+
+// 46 .trim() // The trim() method of String values removes whitespace from both ends of this string and returns a new string, without modifying the original string.
+
+const str15 = "   foo  ";
+console.log(str15.trim()); // 'foo'
+
+// 47 .trimEnd() // The trimEnd() method of String values removes whitespace from the end of this string and returns a new string, without modifying the original string. trimRight() is an alias of this method.
+
+let str16 = "   foo  ";
+
+console.log(str16.length); // 8
+
+str17 = str16.trimEnd();
+console.log(str17.length); // 6
+console.log(str17); // '   foo'
+
+
+// 48.trimStart() // The trimStart() method of String values removes whitespace from the beginning of this string and returns a new string, without modifying the original string. trimLeft() is an alias of this method.
+
+let str18 = "   foo  ";
+
+console.log(str18.length); // 8
+
+str19 = str18.trimStart();
+console.log(str19.length); // 5
+console.log(str19); // 'foo  '
+
+// 49.valueOf() // The valueOf() method of String values returns this string value
+//This method is usually called internally by JavaScript and not explicitly in code.  
+
+const x1 = new String("Hello world");
+console.log(x1.valueOf()); // 'Hello world'
