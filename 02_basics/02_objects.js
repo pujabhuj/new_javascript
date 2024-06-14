@@ -108,3 +108,4 @@ const course = {
 
 const {courseInstructure :inst} = course
 console.log(inst)
+
